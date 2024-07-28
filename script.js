@@ -71,11 +71,22 @@ let count = 2
 let roundCnt = 0
 let level = 0
 let numberClicks = 0
+let warningText = true
 
 
 button.addEventListener('click', () => {
     round();
     button.style.display = 'none'
+    if (warningText) {
+        const warning = document.createElement('h1');
+        warning.className = 'warning';
+        warning.textContent = 'Для Возобновления Поп-ит Нажмите Пробел'
+        wrapper.prepend(warning);
+        setTimeout(() => {
+            warning.remove();
+            warningText = false
+        }, 6000)
+    }
 })
 
 // Функция раунда

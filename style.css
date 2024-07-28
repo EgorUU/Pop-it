@@ -1,3 +1,7 @@
+body {
+    background: linear-gradient(to right, #ffa17f, #00223e);
+    overflow-y: hidden;
+}
 .circle {
     width: 50px;
     height: 45px;
@@ -34,7 +38,7 @@
     height: 900px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding-top: 300px;
     align-items: center;
 }
 button {
@@ -46,4 +50,15 @@ button {
     font-size: 40px;
     font-family: "inter", 'sans-serif';
     transform: translateY(-50px);
+}
+button {
+    background-color: #96dc51;
+    border: none;
+    cursor: pointer;
+}
+.warning {
+    font-size: 20px;
+    font-family: "Arial", sans-serif;
+    position: absolute;
+    top: 200px;
 }
